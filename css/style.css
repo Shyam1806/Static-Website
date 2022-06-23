@@ -1,0 +1,1116 @@
+@import"animate.css";
+* {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.parent1 {
+    margin: 0 auto;
+    width: 80%;
+}
+
+@font-face {
+    font-family: 'poppins';
+    src: url('../fonts/poppins-regular-webfont.eot');
+    src: url('../fonts/poppins-regular-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/poppins-regular-webfont.woff') format('woff'),
+    url('../fonts/poppins-regular-webfont.ttf') format('truetype'),
+    url('../fonts/poppins-regular-webfont.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: firebrick;
+    font-family: 'poppins';
+}
+
+.header {
+    overflow: hidden;
+}
+
+.headerimg1 {}
+
+.headerimg {
+    max-width: 100%;
+    position: relative;
+}
+
+.headerlogo {
+    position: absolute;
+    float: left;
+    top: 0%;
+    left: 8%;
+    width: 25%;
+}
+
+.logoimg {
+    max-width: 100%;
+}
+
+.menubar {
+    float: right;
+    position: absolute;
+    top: 5%;
+    right: 10%;
+    width: 50%;
+
+}
+
+.menubar li > a {
+    float: left;
+    padding: 12px 10px;
+    color: #fff;
+    font-size: 18px;
+}
+.menubar li > a:hover{
+    color: orange;
+    cursor: pointer;
+    transition: 0.4s ease-in;
+}
+.menubar > > a:first-child {
+    text-decoration: underline;
+}
+
+.headerslide > h2 {
+    position: absolute;
+    top: 4em;
+    left: 2.2em;
+    font-weight: 300;
+    font-size: 55px;
+    color: #fff;
+}
+
+.animate {
+    display: inline-block;
+    transform: translate3d(0px, 0%, 0px);
+    transition: all 0.3s ease 0s;
+    text-transform: uppercase;
+}
+
+.headerslide > h3 {
+    position: absolute;
+    top: 17em;
+    left: 5.6em;
+    font-weight: 300;
+    font-size: 18px;
+    color: #fff;
+}
+
+.headerslide>h3 {
+/*    position: absolute ! important;*/
+    color:#fff;
+     display:inline-block;
+/*	top: 10em;*/
+  width: 90%;
+  font-size: 1.4em;
+	animation-duration: 25s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+}
+.headerslide>h3 {
+	animation-name: anim-1;
+}
+@keyframes anim-1 {
+	0%, 8.3% { left: -100%; opacity: 0; }
+  8.3%,25% { left: 5%; opacity: 1; }
+  33.33%, 100% { left: 10%; opacity: 0; }
+}
+
+/*Header End*/
+
+/*About Start*/
+
+.About {
+    background-color: #fff;
+    overflow: hidden;
+    margin-top: -1%;
+    padding-top: 4em;
+    padding-bottom: 3em;
+}
+
+.Aboutleft {
+    float: left;
+    width: 45%;
+    margin-top: 3em;
+}
+
+.Aboutpic {
+    max-width: 100%;
+}
+
+.Aboutright {
+    float: right;
+    width: 50%;
+    margin-top: 3em;
+}
+
+.Abouttext {}
+
+.Abouttext > h1 {}
+
+.Abouttext > p {
+    margin-top: 2em;
+    /* padding: 0px 5px; */
+    padding-right: 4em;
+    line-height: 25px;
+}
+
+.textdivider {
+    /*    color:#333;*/
+    margin-top: 1.8em;
+    width: 17%;
+    border: 0.4px solid #333;
+}
+
+.layers {
+    width: 88%;
+    margin-top: 2.5em;
+
+}
+
+.layer1 {
+    background-color: #333;
+    border-radius: 0.2em;
+}
+
+.layer2 {
+    background-color: darkorange;
+}
+
+.layers > h1 {
+    color: #C8C8C8;
+    font-size: 17px;
+    margin-bottom: 0.4em;
+}
+
+.layers > h1 > span {
+    color: #333;
+    font-size: 17px;
+}
+
+.Abouticonz {
+    margin-top: 0.4em;
+}
+
+.iconic {
+    margin-right: 1em;
+}
+.iconic:hover{
+    color: orange;
+    cursor: pointer;
+}
+/*About End*/
+
+/*Services Start*/
+
+.Services {
+    background-color: #fff;
+    overflow: hidden;
+    padding-top: 4em;
+    padding-bottom: 4em;
+}
+
+.Servicestext {
+    text-align: center;
+}
+
+.Servicestext > h1 {
+    font-size: 30px;
+    font-weight: 800;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+.Servicesdivider {
+    margin: 0 auto;
+    width: 6%;
+    margin-top: 0.8em;
+}
+
+.Servicestext > h2 {
+    color: #b9b9b9;
+    margin-top: 0.4em;
+    font-size: 31px;
+    font-weight: 400;
+    letter-spacing: 0.04em;
+}
+
+.Servicesbox {
+    float: left;
+    width: 33%;
+    margin-top: 4em;
+}
+
+.Serviceiconz {
+    text-align: center;
+    font-size: 16px;
+}
+
+.Servicesbox > h1 {
+    font-size: 16px;
+    text-align: center;
+    margin-top: 0.6em;
+}
+
+.Serviceicons {
+    font-size: 24px;
+}
+
+.Servicesbox > p {
+    font-size: 14px;
+    color: #444;
+    margin-top: 0.8em;
+    text-align: center;
+    padding: 0px 29px;
+    line-height: 24px;
+}
+
+.Servicesz {
+    margin: 0 auto;
+    width: 80%;
+}
+
+/*Services End*/
+
+/*Works Start*/
+
+.Works {
+    background-color: #212121;
+    padding-top: 3em;
+    padding-bottom: 4em;
+    overflow: hidden;
+}
+
+.Worksparent {
+    margin: 0 auto;
+    width: 80%;
+}
+
+.Workstext {
+    text-align: center;
+}
+
+.Workstext > h1 {
+    color: #DCDCDC;
+    font-size: 31px;
+    font-weight: 800;
+    letter-spacing: 0.04em;
+}
+
+.Worksdivider {
+    margin: 0 auto;
+    width: 8%;
+    margin-top: 1em;
+}
+
+.Workstext > p {
+    color: rgb(185, 185, 185);
+    font-size: 29px;
+    font-weight: 300;
+    margin-top: 0.8em;
+}
+
+.Worksbutton {
+    margin-top: 3em;
+}
+
+.Worksbutn {
+    margin-right: 1.6em;
+    padding: 12px 28px;
+    background-color: transparent;
+    color: #ababab;
+    border: 1px solid #fff;
+}
+
+.Worksbutn:hover {
+    cursor: pointer;
+    transition: 0.4S ease;
+    background-color: #ababab;
+    color: #333;
+}
+
+.Worksboxparent {
+    margin-top: 4em;
+}
+
+.Worksbox {
+    float: left;
+    width: 33%;
+    margin-top: 2em;
+}
+
+.Worksimg {
+    max-width: 88%;
+}
+
+/*Works End*/
+
+/*Packages Start*/
+
+.Packagesz {
+    background-color: #FFFFFF;
+    padding-top: 3em;
+    padding-bottom: 3em;
+    overflow: hidden;
+}
+
+.Packagesparent {
+    margin: 0 auto;
+    width: 80%;
+}
+
+.Packagestext {
+    text-align: center;
+}
+
+.Packagestext > h1 {
+    font-size: 31px;
+    font-weight: 800;
+    letter-spacing: 0.04em;
+}
+
+.Packagesdivider {
+    margin: 0 auto;
+    width: 8%;
+    margin-top: 1em;
+}
+
+.Packagestext > p {
+    font-size: 30px;
+    margin-top: 0.8em;
+    color: #b9b9b9;
+}
+
+.Packagesbox {
+    float: left;
+    width: 29%;
+    margin-top: 5em;
+    margin-right: 1.8em;
+    border: 1px solid #333;
+}
+
+.Packageszbox {
+    float: left;
+    width: 29%;
+    margin-top: 5.4em;
+    margin-left: 1.8em;
+    border: 1px solid #333;
+}
+
+.Packagesboxtext {
+    text-align: center;
+}
+
+.Packagesboxtext > h1 {
+    font-size: 18px;
+    letter-spacing: 0.03em;
+    margin-top: 1.6em;
+}
+
+.Packagesboxtext > h2 {
+    color: #000;
+    font-size: 38px;
+    margin-top: 0.8em;
+}
+
+.Packagesboxtext > h3 {
+    margin-top: 1.6em;
+    font-size: 17px;
+    color: #b9b9b9;
+}
+
+.Packagesboxtext > p {
+    margin-top: 3em;
+    color: #b9b9b9;
+}
+
+.Packagesboxiconz {
+    margin-top: 3em;
+    color: #b9b9b9;
+}
+
+.Packagesbutton {
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.Packagesbutn {
+    padding: 12px 23px;
+    background-color: #333;
+    color: #fff;
+    font-size: 16px;
+    border: 1px solid #000;
+    cursor: pointer;
+}
+.Packagesbutn:hover{
+    background-color: darksalmon;
+    color: #000;
+    cursor:pointer;
+    border:1px solid darksalmon;
+    transition: 0.4s ease-in;
+}
+
+.Packagesbox1 {
+    float: left;
+    width: 33%;
+    margin-top: 3.6em;
+    margin-bottom: 2em;
+    margin-right: 1.8em;
+    background-color: #fff;
+}
+
+.Shadow {
+    box-shadow: 0 0 20px 8px #e4e2e2
+}
+
+.Packagesboxtext > h4 {
+    margin-top: 1.6em;
+    font-size: 17px;
+    color: #b9b9b9;
+}
+
+.Packages1button {
+    margin-top: 4em;
+    margin-bottom: 4em;
+}
+
+/*Packages End*/
+
+/*TESTIMONIALS Start*/
+
+.testimonials {
+    background-color: #212121;
+    padding-top: 4em;
+    padding-bottom: 4em;
+    overflow: hidden;
+}
+
+.testimonialstext {
+    text-align: center;
+}
+
+.testimonialstext > h1 {
+    color: #DCDCDC;
+    font-size: 31px;
+    font-weight: 800;
+    letter-spacing: 0.06em;
+}
+
+.testimonialsdivider {
+    margin: 0 auto;
+    width: 8%;
+    margin-top: 1em;
+}
+
+.testimonialstext > h2 {
+    font-size: 25px;
+    margin-top: 1em;
+    color: #DCDCDC;
+    font-weight: 200;
+}
+
+.testimonialsiconz {
+    font-size: 46px;
+    margin-top: 1em;
+    color: #DCDCDC;
+}
+
+.Testimonials1 {}
+
+.testimonialsbox {
+    text-align: center;
+    margin-top: 4em;
+}
+
+.testimonials1 {
+    border-radius: 50%;
+}
+
+
+.testimonialspara > h1 {
+    color: #DCDCDC;
+    margin-top: 1em;
+    font-size: 22px;
+}
+
+.testimonialspara > p {
+    margin-top: 2em;
+    color: #747474;
+    text-align: left;
+    padding: 0px 159px;
+    font-size: 17px;
+    line-height: 28px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*TESTIMONIALS End*/
+
+/*Contactus Start*/
+
+.Contactus {
+    background-color: #fff;
+    padding-top: 4em;
+    padding-bottom: 4em;
+    overflow: hidden;
+}
+
+.Contactustext {
+    text-align: center;
+}
+
+.Contactustext > h1 {
+    text-transform: uppercase;
+    font-size: 31px;
+    font-weight: 800;
+    margin-bottom: 0.6em;
+}
+
+.Contactusdivider {
+    margin-top: 2em;
+    width: 8%;
+    margin: 0 auto;
+}
+
+.Contactustext > h2 {
+    color: #b9b9b9;
+    font-size: 29px;
+    margin-top: 1em;
+    font-weight: 100;
+}
+
+.Contactusbox {
+    float: left;
+    width: 32%;
+    padding: 5px;
+    text-align: center;
+}
+
+.boxsize {}
+
+.Contacticonz {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 30px;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    border-radius: 50%;
+    background: #f5f5f5;
+    margin-bottom: 20px;
+    color: #212121;
+}
+
+.Contactboxtext > h1 {
+    margin-top: 0.5em;
+    font-size: 18px;
+    font-weight: 200;
+}
+
+.Contactboxtext > p {
+    color: #bdbdbd;
+    margin-top: 0.8em;
+}
+
+.Contactboxparent {
+    margin-top: 5em;
+    margin-bottom: 19em;
+}
+
+.inputforms {
+    float: left;
+    width: 40%;
+    padding: 2em;
+}
+
+.inputforms1 {
+    max-width: 100%;
+    margin-left: 2em;
+}
+
+.inputforms2 {
+    margin-top: 1em;
+    max-width: 100%;
+    margin-left: 2em;
+}
+
+.inputformsparent {
+    margin-top: 4em;
+}
+
+.input1 {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #eee;
+    background: #f5f5f5;
+    font-size: 14px;
+    border-radius: 2px;
+    box-shadow: none;
+}
+
+.input2 {
+    width: 89%;
+    padding: 12px;
+    border: 1px solid #eee;
+    background: #f5f5f5;
+    font-size: 14px;
+    border-radius: 2px;
+    box-shadow: none;
+}
+
+.Inputbuttonz {
+    max-width: 100%;
+    margin-left: 2em;
+    margin-top: 2em;
+}
+
+.inputbutn {
+    width: 92%;
+    padding: 12px;
+    border: 1px solid #eee;
+    background: #000;
+    color: #bdbdbd;
+    font-size: 16px;
+    border-radius: 2px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.inputbutn:hover {
+    cursor: pointer;
+    transition: 0.4S ease;
+    background-color: #333;
+    color: fuchsia;
+}
+
+/*Contactus End*/
+
+/*Footer Start*/
+
+.Footer {
+    background-color: #212121;
+    overflow: hidden;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+.Footertext {
+    text-align: center;
+}
+
+.Footertext > h1 {
+    color: #bdbdbd;
+    font-size: 18px;
+    margin-top: 0.4em;
+}
+
+.Footericonz {
+    text-align: center;
+    margin-top: 1.8em;
+}
+
+.footericonzs {
+    width: 30px;
+    height: 30px;
+    color: #bdbdbd;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50%;
+    margin: 0 1px;
+    background: #2f2f2f;
+    transition: all .3s;
+    margin-right: 0.4em;
+}
+
+.Footertext1 > p {
+    text-align: center;
+    margin-top: 1.4em;
+    color: #bdbdbd
+}
+
+.footericonzs:hover {
+    cursor: pointer;
+    transform: rotate(360deg);
+    transition: 0.4s ease;
+    color: orange;
+}
+/*Footer End*/
+
+
+
+#back2Top {
+width: 40px;
+height: 39px;
+    overflow: hidden;
+    z-index: 999;
+    cursor: pointer;
+    position: fixed;
+    bottom: 50px;
+    right: 21px;
+    border-radius: 50%;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    font-size: 30px;
+    text-decoration: none;
+}
+#back2Top:hover {
+    background-color: #DDF;
+    color: #000;
+    transform: rotate(360deg);
+    transition: 0.6s ease-in-out;
+}
+
+
+
+
+
+
+/*Media Query*/
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+
+    //CSS
+}
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+    .parent1 {
+        width: 100%;
+        margin: 0;
+    }
+    .headerlogo {
+        width: 13%;
+        left: 3%;
+    }
+    .menubar {
+        width: 62%;
+        top: 8%;
+        float: right;
+    }
+    .Servicesz {
+        width: 100%;
+    }
+    .Worksparent {
+        width: 96%;
+    }
+    .Packagesparent {
+        width: 90%;
+    }
+    .Packageszbox {
+        width: 27%;
+        /*    margin-right: 3em;*/
+    }
+
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    .parent1 {
+        width: 100%;
+    }
+    .headerlogo {
+        left: 3%;
+        width: 13%;
+    }
+    .menubar {
+        width: 55%;
+    }
+    .headerslide > h2 {
+        left: 1em;
+        font-size: 48px;
+    }
+    .headerslide > h3 {
+        left: 3em;
+        right: 2em;
+        top: 15em;
+        line-height: 25px;
+    }
+    .Aboutleft {
+        margin-top: 10em;
+    }
+    .Aboutright {
+        width: 55%;
+    }
+    .Abouttext > p {
+        padding-right: 2.4em;
+    }
+    .Servicesz {
+        width: 100%;
+    }
+    .Worksparent {
+        width: 91%;
+    }
+    .Workstext > p {
+        padding: 0px 32px;
+        line-height: 29px;
+    }
+    .Packagesparent {
+        width: 91%;
+    }
+    .Packageszbox {
+        margin-left: 1em;
+        width: 27%;
+    }
+    .testimonialspara > p {
+        padding: 0px 98px;
+    }
+    .inputforms {
+        width: 30%;
+        padding: 2em;
+        margin-left: 3.4em;
+    }
+
+    .input1 {
+        width: 100%;
+        margin-left: 0em;
+    }
+
+    .input2 {
+        width: 73%;
+        margin-left: 3.9em;
+    }
+    .inputbutn {
+        width: 77%;
+        margin-left: 3.4em;
+    }
+}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+
+    .Packageszbox {
+        width: 26%;
+    }
+    .input1 {
+        width: 84%;
+    }
+    .inputforms {
+        margin-left: 3.2em;
+    }
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+    .headerslide > h3 {
+        font-size: 14px;
+        top: 13em;
+        left: 3em;
+        right: 2em;
+    }
+    .headerslide > h2 {
+        top: 7em;
+        font-size: 21px;
+    }
+    .Aboutleft {
+        width: 100%;
+    }
+    .Aboutright {
+        width: 100%;
+        margin-left: 1em;
+        float: left;
+        font-size: 14px;
+    }
+    .layers {
+        margin-left: 1em;
+        width: 84%;
+    }
+    .Abouticonz {
+        margin-left: 1em;
+    }
+    .Servicesbox {
+        width: 100%;
+    }
+    .Worksbutton {
+        width: 72%;
+        margin-left: 4em;
+    }
+    .Worksbox {
+        width: 100%;
+    }
+    .Packagesbox {
+        width: 100%;
+    }
+    .testimonialspara > p {
+        padding: 0px 55px;
+        color: #cecccc;
+    }
+    .Contactusbox {
+        width: 100%;
+    }
+    .inputforms {
+        width: 100%;
+        margin-left: -3em;
+    }
+    .inputforms1 {
+        margin-left: -1em;
+    }
+    .input2 {
+        width: 100%;
+    }
+    .inputforms2 {
+        margin-left: -1em;
+    }
+    .Inputbuttonz {
+        margin-left: -1em;
+    }
+    .inputbutn {
+        width: 107%;
+    }
+    .Packagesbox1 {
+        width: 100%;
+    }
+    .Packageszbox {
+        width: 100%;
+        margin-left: 0em;
+    }
+    .Abouttext > h1 {
+        margin-left: 0.6em;
+    }
+    .Abouttext > p {
+        margin-left: 1em;
+    }
+.menubar{
+display:none;
+}
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .headerlogo {
+        left: 3%;
+    }
+    .headerslide > h2 {
+        top: 4em;
+        left: 1em;
+        font-size: 20px;
+    }
+    .headerslide > h3 {
+        top: 10em;
+        left: 2em;
+        font-size: 10.8px;
+    }
+.menubar{
+display:none;
+}
+    .Aboutleft {
+        width: 100%;
+    }
+    .Aboutright {
+        width: 100%;
+    }
+    .Abouttext > h1 {
+        margin-left: 0.6em;
+    }
+    .textdivider {
+        margin-left: 1em;
+        width: 40%;
+    }
+    .Abouttext > p {
+        margin-left: 1em;
+        padding-right: 1em;
+        font-size: 14px;
+    }
+    .layers {
+        width: 84%;
+        margin-left: 1em;
+    }
+    .Abouticonz {
+        margin-left: 1em;
+    }
+    .Servicesbox {
+        width: 100%;
+    }
+    .Worksparent {
+        width: 85%;
+    }
+    .Workstext > p {
+        font-weight: 100;
+    }
+    .Worksbutton {
+        float: left;
+        width: 82%;
+    }
+    .Worksbox {
+        width: 100%;
+    }
+    .Worksboxparent {
+        width: 102%;
+    }
+    .Worksimg {
+        max-width: 100%;
+    }
+    .Packagesbox {
+        width: 112%;
+        margin-left: -1em;
+    }
+    .Packagesbox1 {
+        width: 112%;
+        margin-left: -1em;
+    }
+    .Packageszbox {
+        width: 112%;
+        margin-left: -1em;
+    }
+    .testimonialstext > h2 {
+        font-size: 27px;
+    }
+    .testimonialspara > p {
+        padding: 0px 22px;
+        font-size: 14px;
+        color: #dad7d7;
+    }
+    .Contactusbox {
+        width: 100%;
+        margin-bottom: 2em;
+    }
+    .inputforms {
+        width: 107%;
+        margin-left: -3.5em;
+        margin-top: -1em;
+    }
+    .input2 {
+        width: 117%;
+        margin-left: -4em;
+    }
+    .inputbutn {
+        margin-left: -3.5em;
+        width: 125%;
+    }
+
+}
